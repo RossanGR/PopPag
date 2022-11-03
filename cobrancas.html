@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <main>
+        <div class="bg-secondary ">
+            <!-- MENU LATERAL -->
+            <button class="btn btn-secondary w-100 d-lg-none " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample">
+                Menu <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <div class="rounded-circle bg-light d-flex justify-content-center align-items-center img-adapt">
+                            <img src="./assets/img/colegio-farroupilha.png" alt="Colégio Farroupilha"
+                                title="Colégio Farroupilha" />
+                        </div>
+
+                        <h2 class="gray text-center py-2 fs-2">Colégio<br> Farroupilha</h2>
+                        <p class="gray text-center ">colegiofarroupilha</p>
+
+                        <a class="btn btn-success d-block m-auto" href="my-account.html" role="button"><i class="fa-solid fa-user"></i> Meus dados</a>
+                        <hr>
+                    </div>
+                    <div>
+                        <ul class="nav flex-column menu">
+                            <li class="nav-item mb-3 mt-5">
+                                <a class="nav-link active " aria-current="page" href="#"><i
+                                        class="fa-solid fa-house icon-menu"></i> início</a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-hand-holding-dollar icon-menu"></i>
+                                    Pagamentos</a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-users icon-menu"></i>
+                                    Clientes</a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-handshake icon-menu"></i>
+                                    Ofertas</a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-scroll icon-menu"></i> Relatórios</a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-bell icon-menu"></i> Notificação</a>
+                            </li>
+                            <li class="nav-item mb-3 mt-4">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-right-from-bracket icon-menu"></i> Sair</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- END MENU LATERAL -->
+        </div>
+
+        <section class="bg-primary custom-height">
+            <div class="container pt-5">
+
+                <div class="row justify-content-center ">
+                    <!-- USER -->
+                    <div class="col-12 col-lg-2 ">
+
+                        <div class="rounded-circle bg-light d-flex justify-content-center align-items-center img-adapt">
+                            <img src="./assets/img/colegio-farroupilha.png" alt="Colégio Farroupilha"
+                                title="Colégio Farroupilha" />
+                        </div>
+
+                        <h2 class="white text-center py-2 fs-2">Colégio<br> Farroupilha</h2>
+                        <p class="white text-center ">colegiofarroupilha</p>
+
+                        <div class="menu-vertical d-none d-lg-block">
+                            <ul class="nav flex-column align-items-center">
+                                <li class="nav-item card mb-3 mt-5">
+                                    <a class="nav-link active " aria-current="page" href="#"><i
+                                            class="fa-solid fa-house icon-menu"></i><br> início</a>
+                                </li>
+                                <li class="nav-item card mb-3">
+                                    <a class="nav-link" href="#"><i
+                                            class="fa-solid fa-hand-holding-dollar icon-menu"></i><br> Pagamentos</a>
+                                </li>
+                                <li class="nav-item card mb-3">
+                                    <a class="nav-link" href="#"><i class="fa-solid fa-users icon-menu"></i><br>
+                                        Clientes</a>
+                                </li>
+                                <li class="nav-item card mb-3">
+                                    <a class="nav-link" href="#"><i class="fa-solid fa-handshake icon-menu"></i><br>
+                                        Ofertas</a>
+                                </li>
+                                <li class="nav-item card mb-3">
+                                    <a class="nav-link" href="#"><i
+                                            class="fa-solid fa-scroll icon-menu"></i><br>Relatórios</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- ALL CARDS -->
+                    <div class="col-12 col-lg-10 txt-center px-lg-5">
+                        <!-- HEADER -->
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <p class="white">Olá, Colégio Farroupilha! As informações da sua conta estão aqui</p>
+                            </div>
+                            <div class="col-12 col-lg-6 d-none d-lg-block">
+                                <div class="d-flex justify-content-end flex-wrap">
+                                    <div class="rounded-circle bg-secondary rounded-icons-header">
+                                        <i class="fa-solid fa-bell white text-center"></i>
+                                    </div>
+                                    <div class="rounded-circle bg-secondary rounded-icons-header">
+                                       <a href="my-account.html"> <i class="fa-solid fa-user white"></i></a>
+                                    </div>
+                                    <div class="rounded-circle bg-terciary rounded-icons-header">
+                                        <i class="fa-solid fa-arrow-right-from-bracket white  "></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CARDS -->
+                        <div>
+                            <div class="card bg-card py-5 px-4 mb-3">
+                                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                    <div>
+                                        <h2>Visão geral</h2>
+                                        <p>Sua conta em tempo real</p>
+                                    </div>
+                                    <div class="d-flex align-items-center flex-wrap">
+                                        <div class="input-group mb-3 mx-3">
+                                            <label class="input-group-text" for="inputGroupSelect01"><i
+                                                    class="fa-solid fa-filter"></i></label>
+                                            <select class="form-select" id="inputGroupSelect01">
+                                                <option selected>Quantidade</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <label class="input-group-text" for="inputGroupSelect01"><i
+                                                    class="fa-solid fa-calendar-days"></i></label>
+                                            <select class="form-select" id="inputGroupSelect02">
+                                                <option selected>Última Semana</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5">
+                                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 ">
+                                        <div class="card bg-card py-4 px-3 custom-height-card mb-3">
+                                            <h3 class="text-center blue">701</h3>
+                                            <p class="text-center">cobranças geradas</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 ">
+                                        <div class="card bg-card py-4 px-3 custom-height-card mb-3">
+                                            <h3 class="text-center green">688</h3>
+                                            <p class="text-center">cobranças pagas integralmante</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 ">
+                                        <div class="card bg-card py-4 px-3 custom-height-card mb-3">
+                                            <h3 class="text-center gray">758</h3>
+                                            <p class="text-center">cobranças pagas parcialmente</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 ">
+                                        <div class="card bg-card py-4 px-3 custom-height-card mb-3">
+                                            <h3 class="text-center yellow">12.403</h3>
+                                            <p class="text-center">Total de cobranças atrasadas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- GRÁFICOS -->
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="card bg-card py-5 px-4 mb-3">
+                                    <h2>Valores pagos</h2>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="card bg-card py-5 px-4 mb-3">
+                                    <h2>Quantidade</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- GRÁFICOS E CLIENTES -->
+                        <div class="row">
+                            <div class="col-12 col-lg-7">
+                                <div class="card bg-card py-5 px-4 mb-3">
+                                    <h2>Frações Geradas x Pagas</h2>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="card bg-card py-5 px-4 mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <h2>Clientes</h2>
+                                        <h2>2.561</h2>
+                                    </div>
+                                    <div>
+                                        <table class="table table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="first-colum-table"><i
+                                                            class="fa-solid fa-user bg-ligth-gray p-2 rounded-circle gray"></i>
+                                                    </td>
+                                                    <td class="align-middle">Eduardo dos Santos</td>
+                                                    <td class="align-middle last-colum-table">22/07/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="first-colum-table"><i
+                                                            class="fa-solid fa-user bg-ligth-gray p-2 rounded-circle gray"></i>
+                                                    </td>
+                                                    <td class="align-middle">Eduardo dos Santos</td>
+                                                    <td class="align-middle">22/07/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="first-colum-table"><i
+                                                            class="fa-solid fa-user bg-ligth-gray p-2 rounded-circle gray"></i>
+                                                    </td>
+                                                    <td class="align-middle">Eduardo dos Santos</td>
+                                                    <td class="align-middle last-colum-table">22/07/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="first-colum-table"><i
+                                                            class="fa-solid fa-user bg-ligth-gray p-2 rounded-circle gray"></i>
+                                                    </td>
+                                                    <td class="align-middle">Eduardo dos Santos</td>
+                                                    <td class="align-middle last-colum-table">22/07/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="first-colum-table"><i
+                                                            class="fa-solid fa-user bg-ligth-gray p-2 rounded-circle gray"></i>
+                                                    </td>
+                                                    <td class="align-middle">Eduardo dos Santos</td>
+                                                    <td class="align-middle">22/07/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="first-colum-table"><i
+                                                            class="fa-solid fa-user bg-ligth-gray p-2 rounded-circle gray"></i>
+                                                    </td>
+                                                    <td class="align-middle">Eduardo dos Santos</td>
+                                                    <td class="align-middle">22/07/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="first-colum-table"><i
+                                                            class="fa-solid fa-user bg-ligth-gray p-2 rounded-circle gray"></i>
+                                                    </td>
+                                                    <td class="align-middle">Eduardo dos Santos</td>
+                                                    <td class="align-middle">22/07/2022</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="text-center"><a class="gray" href="clientes">Ver todos os clientes</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ÚLTIMOS PAGAMENTOS -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card bg-card py-5 px-4 mb-3">
+                                    <div>
+                                        <h2>Últimos Pagamentos</h2>
+                                        <div class="table-responsive mb-4">
+                                            <table class="table table-striped w-100">
+                                                <thead class="thead-sticly">
+                                                    <th colspan="3">Pagante</th>
+                                                    <th colspan="1">Data</th>
+                                                    <th colspan="1">Parcela</th>
+                                                    <th colspan="1">Valor pago</th>
+                                                    <th colspan="1">Valor total</th>
+                                                    <th colspan="1">Saldo devido</th>
+                                                    <th colspan="1">Ações</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="first-colum-table" colspan="3">
+                                                            <i
+                                                                class="fa-solid fa-user bg-ligth-gray p-2 rounded-circle gray"></i>
+                                                            <span class="px-2">Eduardo dos Santos</span>
+                                                        </td>
+                                                        <td class="align-middle" colspan="1">22/07/22</td>
+                                                        <td class="align-middle" colspan="1">03/12</td>
+                                                        <td class="align-middle" colspan="1">R$ 250,00</td>
+                                                        <td class="align-middle" colspan="1">R$ 2.000,00</td>
+                                                        <td class="align-middle" colspan="1">R$ 1.750,00</td>
+                                                        <td class="align-middle last-colum-table" colspan="1">
+                                                            <div class="btn-group" role="group">
+                                                                <button type="button"
+                                                                    class="btn btn-secondary dropdown-toggle"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    Dropdown
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Dropdown
+                                                                            link</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Dropdown
+                                                                            link</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="first-colum-table" colspan="3">
+                                                            <i
+                                                                class="fa-solid fa-user bg-ligth-gray p-2 rounded-circle gray"></i>
+                                                            <span class="px-2">Eduardo dos Santos</span>
+                                                        </td>
+                                                        <td class="align-middle" colspan="1">22/07/22</td>
+                                                        <td class="align-middle" colspan="1">03/12</td>
+                                                        <td class="align-middle" colspan="1">R$ 250,00</td>
+                                                        <td class="align-middle" colspan="1">R$ 2.000,00</td>
+                                                        <td class="align-middle" colspan="1">R$ 1.750,00</td>
+                                                        <td class="align-middle last-colum-table" colspan="1">Ações</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="first-colum-table" colspan="3">
+                                                            <i
+                                                                class="fa-solid fa-user bg-ligth-gray p-2 rounded-circle gray"></i>
+                                                            <span class="px-2">Eduardo dos Santos</span>
+                                                        </td>
+                                                        <td class="align-middle" colspan="1">22/07/22</td>
+                                                        <td class="align-middle" colspan="1">03/12</td>
+                                                        <td class="align-middle" colspan="1">R$ 250,00</td>
+                                                        <td class="align-middle" colspan="1">R$ 2.000,00</td>
+                                                        <td class="align-middle" colspan="1">R$ 1.750,00</td>
+                                                        <td class="align-middle last-colum-table" colspan="1">Ações</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="first-colum-table" colspan="3">
+                                                            <i
+                                                                class="fa-solid fa-user bg-ligth-gray p-2 rounded-circle gray"></i>
+                                                            <span class="px-2">Eduardo dos Santos</span>
+                                                        </td>
+                                                        <td class="align-middle" colspan="1">22/07/22</td>
+                                                        <td class="align-middle" colspan="1">03/12</td>
+                                                        <td class="align-middle" colspan="1">R$ 250,00</td>
+                                                        <td class="align-middle" colspan="1">R$ 2.000,00</td>
+                                                        <td class="align-middle" colspan="1">R$ 1.750,00</td>
+                                                        <td class="align-middle last-colum-table" colspan="1">Ações</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="first-colum-table" colspan="3">
+                                                            <i
+                                                                class="fa-solid fa-user bg-ligth-gray p-2 rounded-circle gray"></i>
+                                                            <span class="px-2">Eduardo dos Santos</span>
+                                                        </td>
+                                                        <td class="align-middle" colspan="1">22/07/22</td>
+                                                        <td class="align-middle" colspan="1">03/12</td>
+                                                        <td class="align-middle" colspan="1">R$ 250,00</td>
+                                                        <td class="align-middle" colspan="1">R$ 2.000,00</td>
+                                                        <td class="align-middle" colspan="1">R$ 1.750,00</td>
+                                                        <td class="align-middle last-colum-table" colspan="1">Ações</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="first-colum-table" colspan="3">
+                                                            <i
+                                                                class="fa-solid fa-user bg-ligth-gray p-2 rounded-circle gray"></i>
+                                                            <span class="px-2">Eduardo dos Santos</span>
+                                                        </td>
+                                                        <td class="align-middle" colspan="1">22/07/22</td>
+                                                        <td class="align-middle" colspan="1">03/12</td>
+                                                        <td class="align-middle" colspan="1">R$ 250,00</td>
+                                                        <td class="align-middle" colspan="1">R$ 2.000,00</td>
+                                                        <td class="align-middle" colspan="1">R$ 1.750,00</td>
+                                                        <td class="align-middle last-colum-table" colspan="1">Ações</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="first-colum-table" colspan="3">
+                                                            <i
+                                                                class="fa-solid fa-user bg-ligth-gray p-2 rounded-circle gray"></i>
+                                                            <span class="px-2">Eduardo dos Santos</span>
+                                                        </td>
+                                                        <td class="align-middle">22/07/22</td>
+                                                        <td class="align-middle">03/12</td>
+                                                        <td class="align-middle">R$ 250,00</td>
+                                                        <td class="align-middle">R$ 2.000,00</td>
+                                                        <td class="align-middle">R$ 1.750,00</td>
+                                                        <td class="align-middle last-colum-table ">Ações</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <nav aria-label="Page navigation example mt-5">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item disabled">
+                                                    <a class="page-link">Previous</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">Next</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <p class="text-center"><a class="gray" href="pagamentos">Ver todos os
+                                                pagamentos</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/js/all.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
