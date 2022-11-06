@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Nova cobrança</title>
+</head>
+
+<body>
+  <main>
+    <div class="bg-secondary">
+      <!-- MENU LATERAL -->
+      <button class="btn btn-secondary w-100 d-lg-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        Menu <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <div class="rounded-circle bg-light d-flex justify-content-center align-items-center img-adapt">
+              <img src="./assets/img/colegio-farroupilha.png" alt="Colégio Farroupilha" title="Colégio Farroupilha" />
+            </div>
+
+            <h2 class="gray text-center py-2 fs-2">
+              Colégio<br />
+              Farroupilha
+            </h2>
+            <p class="gray text-center">colegiofarroupilha</p>
+
+            <a class="btn btn-success d-block m-auto" href="my-account.html" role="button"><i
+                class="fa-solid fa-user"></i> Meus dados</a>
+            <hr />
+          </div>
+          <div>
+            <ul class="nav flex-column menu">
+              <li class="nav-item mb-3 mt-5">
+                <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-house icon-menu"></i> início</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="nav-link active" href="cobrancas.html"><i
+                    class="fa-solid fa-hand-holding-dollar icon-menu"></i>
+                  Cobranças</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="nav-link" href="#"><i class="fa-solid fa-users icon-menu"></i> Clientes</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="nav-link" href="#"><i class="fa-solid fa-handshake icon-menu"></i> Ofertas</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="nav-link" href="#"><i class="fa-solid fa-scroll icon-menu"></i> Relatórios</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="nav-link" href="#"><i class="fa-solid fa-bell icon-menu"></i> Notificação</a>
+              </li>
+              <li class="nav-item mb-3 mt-4">
+                <a class="nav-link" href="#"><i class="fa-solid fa-right-from-bracket icon-menu"></i>
+                  Sair</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- END MENU LATERAL -->
+    </div>
+
+    <section class="bg-primary custom-height">
+      <div class="container pt-5">
+        <div class="row justify-content-center">
+          <!-- USER -->
+          <div class="col-12 col-lg-2">
+            <div class="rounded-circle bg-light d-flex justify-content-center align-items-center img-adapt">
+              <img src="./assets/img/colegio-farroupilha.png" alt="Colégio Farroupilha" title="Colégio Farroupilha" />
+            </div>
+
+            <h2 class="white text-center py-2 fs-2">
+              Colégio<br />
+              Farroupilha
+            </h2>
+            <p class="white text-center">colegiofarroupilha</p>
+
+            <div class="menu-vertical d-none d-lg-block">
+              <ul class="nav flex-column align-items-center">
+                <li class="nav-item card mb-3 mt-5">
+                  <a class="nav-link" aria-current="page" href="index.html"><i
+                      class="fa-solid fa-house icon-menu"></i><br />
+                    início</a>
+                </li>
+                <li class="nav-item card mb-3">
+                  <a class="nav-link active" href="cobrancas.html"><i
+                      class="fa-solid fa-hand-holding-dollar icon-menu"></i><br />
+                    Cobranças</a>
+                </li>
+                <li class="nav-item card mb-3">
+                  <a class="nav-link" href="#"><i class="fa-solid fa-users icon-menu"></i><br />
+                    Clientes</a>
+                </li>
+                <li class="nav-item card mb-3">
+                  <a class="nav-link" href="#"><i class="fa-solid fa-handshake icon-menu"></i><br />
+                    Ofertas</a>
+                </li>
+                <li class="nav-item card mb-3">
+                  <a class="nav-link" href="#"><i class="fa-solid fa-scroll icon-menu"></i><br />Relatórios</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ALL CARDS -->
+          <div class="col-12 col-lg-10 txt-center px-lg-5">
+            <!-- HEADER -->
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <p class="white">
+                  Olá, Colégio Farroupilha! As informações da sua conta estão
+                  aqui
+                </p>
+              </div>
+              <div class="col-12 col-lg-6 d-none d-lg-block">
+                <div class="d-flex justify-content-end flex-wrap">
+                  <div class="rounded-circle bg-secondary rounded-icons-header">
+                    <i class="fa-solid fa-bell white text-center"></i>
+                  </div>
+                  <div class="rounded-circle bg-secondary rounded-icons-header">
+                    <a href="my-account.html">
+                      <i class="fa-solid fa-user white"></i></a>
+                  </div>
+                  <div class="rounded-circle bg-terciary rounded-icons-header">
+                    <i class="fa-solid fa-arrow-right-from-bracket white"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- CARDS -->
+            <form>
+
+              <div class="card bg-card py-5 px-4 mb-3">
+
+                <h2>Nova Cobrança</h2>
+                <p>Preencha os campos abaixo.</p>
+
+                <h2 class="mt-5">Dados do pagador</h2>
+
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-6 col-xl-6 mt-4">
+                    <label class="gray pb-2 fw-semibold">Tipo de documento</label>
+                    <div class="input-group mb-4">
+                      <label class="input-group-text rounded-0 bg-disable" for="inputGroupSelect01"><i
+                          class="fa-solid fa-address-book gray"></i></label>
+                      <select class="form-select form-control-custom p-2 pb-2 rounded-0" disabled
+                        id="inputGroupSelect01">
+                        <option selected value="CPF">CPF</option>
+                      </select>
+                    </div>
+
+                    <label class="gray pb-2 fw-semibold">E-mail</label>
+                    <div class="input-group flex-nowrap mb-4">
+                      <span class="input-group-text  rounded-0" id="addon-wrapping"><i
+                          class="fa-solid fa-envelope gray"></i></span>
+                      <input type="text" class="form-control form-control-custom pb-2 p-2 rounded-0"
+                        placeholder="E-mail" aria-label="E-mail" aria-describedby="addon-wrapping">
+                    </div>
+
+                    <label class="gray pb-2 fw-semibold">Nome</label>
+                    <div class="input-group flex-nowrap mb-4">
+                      <span class="input-group-text  rounded-0" id="addon-wrapping"><i
+                          class="fa-solid fa-user gray"></i></span>
+                      <input type="text" class="form-control form-control-custom pb-2 p-2 rounded-0" placeholder="Nome"
+                        aria-label="Nome" aria-describedby="addon-wrapping">
+                    </div>
+
+                    <label class="gray pb-2 fw-semibold">Data nascimento</label>
+                    <div class="input-group flex-nowrap mb-4">
+                      <span class="input-group-text  rounded-0" id="addon-wrapping"><i
+                          class="fa-solid fa-calendar gray"></i></span>
+                      <input type="date" class="form-control form-control-custom pb-2 p-2 rounded-0" placeholder="Nome"
+                        aria-label="Nome" aria-describedby="addon-wrapping">
+                    </div>
+
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-6 col-xl-6 mt-4">
+                    <label class="gray pb-2 fw-semibold">Numero de documento</label>
+                    <div class="input-group flex-nowrap mb-4">
+                      <span class="input-group-text  rounded-0" id="addon-wrapping"><i
+                          class="fa-solid fa-address-book gray"></i></span>
+                      <input type="text" class="form-control form-control-custom pb-2 p-2 rounded-0"
+                        placeholder="Digite seu documento" aria-label="Digite seu documento"
+                        aria-describedby="addon-wrapping">
+                    </div>
+
+                    <label class="gray pb-2 fw-semibold">Telefone</label>
+                    <div class="input-group flex-nowrap mb-4">
+                      <span class="input-group-text pb-2 rounded-0" id="addon-wrapping"><i
+                          class="fa-solid fa-phone gray"></i></span>
+                      <input type="text" class="form-control form-control-custom p-2 pb-2 rounded-0"
+                        placeholder="Digite seu telefone" aria-label="Digite seu telefone"
+                        aria-describedby="addon-wrapping">
+                    </div>
+
+                    <label class="gray pb-2 fw-semibold">Sobrenome</label>
+                    <div class="input-group flex-nowrap mb-4">
+                      <span class="input-group-text pb-2 rounded-0" id="addon-wrapping"><i
+                          class="fa-solid fa-user gray"></i></span>
+                      <input type="text" class="form-control form-control-custom p-2 pb-2 rounded-0"
+                        placeholder="Digite seu sobrenome" aria-label="Digite seu sobrenome"
+                        aria-describedby="addon-wrapping">
+                    </div>
+
+                    <label class="gray pb-2 fw-semibold">Gênero</label>
+                    <div class="input-group mb-4">
+                      <label class="input-group-text rounded-0" for="inputGroupSelect01"><i
+                          class="fa-solid fa-venus-mars gray"></i></label>
+                      <select class="form-select form-control-custom p-2 pb-2 rounded-0" id="inputGroupSelect01">
+                        <option selected>Selecione seu gênero</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Outros">Outros</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ENDEREÇO -->
+              <div class="card bg-card py-5 px-4 mb-3">
+                <h2>Endereço</h2>
+                <div class="row">
+                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-4">
+                    <label class="gray pb-2 fw-semibold">CEP</label>
+                    <div class="input-group flex-nowrap mb-4">
+                      <span class="input-group-text rounded-0 " id="addon-wrapping"><i
+                          class="fa-solid fa-map-location-dot gray"></i></span>
+                      <input type="text" class="form-control form-control-custom rounded-0 p-2"
+                        placeholder="Digite seu CEP" aria-label="Digite seu CEP" aria-describedby="addon-wrapping">
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-4">
+                    <label class="gray pb-2 fw-semibold">Estado</label>
+                    <div class="input-group mb-4">
+                      <label class="input-group-text rounded-0" for="inputGroupSelect01"><i
+                          class="fa-solid fa-map-location-dot gray"></i></label>
+                      <select class="form-select form-control-custom p-2 pb-2 rounded-0" id="inputGroupSelect01">
+                        <option selected>Selecione uma opção</option>
+                        <option value="1">Percentual</option>
+                        <option value="2">Valor fixo</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-4">
+                    <label class="gray pb-2 fw-semibold">País</label>
+                    <div class="input-group mb-4">
+                      <label class="input-group-text rounded-0" for="inputGroupSelect01"><i
+                          class="fa-solid fa-earth-americas gray"></i></label>
+                      <select class="form-select form-control-custom p-2 pb-2 rounded-0" id="inputGroupSelect01">
+                        <option selected>Selecione uma opção</option>
+                        <option value="1">Percentual</option>
+                        <option value="2">Valor fixo</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 col-md-8 col-lg-8 col-xl-8 mt-2">
+                    <label class="gray pb-2 fw-semibold">Endereço</label>
+                    <div class="input-group flex-nowrap mb-4">
+                      <span class="input-group-text rounded-0 " id="addon-wrapping"><i
+                          class="fa-solid fa-map-location-dot gray"></i></span>
+                      <input type="text" class="form-control form-control-custom rounded-0 p-2"
+                        placeholder="Digite seu endereço" aria-label="Digite seu endereço"
+                        aria-describedby="addon-wrapping">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-2">
+                    <label class="gray pb-2 fw-semibold">Número</label>
+                    <div class="input-group flex-nowrap mb-4">
+                      <span class="input-group-text rounded-0 " id="addon-wrapping"><i
+                          class="fa-solid fa-map-location-dot gray"></i></span>
+                      <input type="text" class="form-control form-control-custom rounded-0 p-2"
+                        placeholder="Digite seu número" aria-label="Digite seu número"
+                        aria-describedby="addon-wrapping">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-2">
+                    <label class="gray pb-2 fw-semibold">Completamento</label>
+                    <div class="input-group flex-nowrap mb-4">
+                      <span class="input-group-text rounded-0 " id="addon-wrapping"><i
+                          class="fa-solid fa-map-location-dot gray"></i></span>
+                      <input type="text" class="form-control form-control-custom rounded-0 p-2"
+                        placeholder="Digite seu complemente" aria-label="Digite seu complemente"
+                        aria-describedby="addon-wrapping">
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-2">
+                    <label class="gray pb-2 fw-semibold">Bairro</label>
+                    <div class="input-group flex-nowrap mb-4">
+                      <span class="input-group-text rounded-0 " id="addon-wrapping"><i
+                          class="fa-solid fa-city gray"></i></span>
+                      <input type="text" class="form-control form-control-custom rounded-0 p-2"
+                        placeholder="Digite seu bairro" aria-label="Digite seu bairro"
+                        aria-describedby="addon-wrapping">
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-2">
+                    <label class="gray pb-2 fw-semibold">Cidade</label>
+                    <div class="input-group flex-nowrap mb-4">
+                      <span class="input-group-text rounded-0 " id="addon-wrapping"><i
+                          class="fa-solid fa-city gray"></i></span>
+                      <input type="text" class="form-control form-control-custom rounded-0 p-2"
+                        placeholder="Digite sua cidade" aria-label="Digite sua cidade"
+                        aria-describedby="addon-wrapping">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card bg-card py-5 px-4 mb-3">
+                <h2>Cobrança por cliente</h2>
+                <div class="table-responsive mb-4">
+                  <table class="table table-striped w-100">
+                    <thead class="thead-sticly">
+                      <th colspan="3">CPF/CNPJ</th>
+                      <th colspan="1">Data</th>
+                      <th colspan="1">Parcela</th>
+                      <th colspan="1">Valor pago</th>
+                      <th colspan="1">Valor total</th>
+                      <th colspan="1">Saldo devido</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="first-colum-table" colspan="3">
+                          <i class="fa-solid fa-user bg-ligth-gray p-2 rounded-circle gray"></i>
+                          <span class="px-2">Eduardo dos Santos</span>
+                        </td>
+                        <td class="align-middle" colspan="1">22/07/22</td>
+                        <td class="align-middle" colspan="1">03/12</td>
+                        <td class="align-middle" colspan="1">R$ 250,00</td>
+                        <td class="align-middle" colspan="1">R$ 2.000,00</td>
+                        <td class="align-middle" colspan="1">R$ 1.750,00</td>
+                      </tr>
+                      <tr>
+                        <td class="first-colum-table" colspan="3">
+                          <i class="fa-solid fa-user bg-ligth-gray p-2 rounded-circle gray"></i>
+                          <span class="px-2">Eduardo dos Santos</span>
+                        </td>
+                        <td class="align-middle" colspan="1">22/07/22</td>
+                        <td class="align-middle" colspan="1">03/12</td>
+                        <td class="align-middle" colspan="1">R$ 250,00</td>
+                        <td class="align-middle" colspan="1">R$ 2.000,00</td>
+                        <td class="align-middle" colspan="1">R$ 1.750,00</td>
+                      </tr>
+                      <tr>
+                        <td class="first-colum-table" colspan="3">
+                          <i class="fa-solid fa-user bg-ligth-gray p-2 rounded-circle gray"></i>
+                          <span class="px-2">Eduardo dos Santos</span>
+                        </td>
+                        <td class="align-middle" colspan="1">22/07/22</td>
+                        <td class="align-middle" colspan="1">03/12</td>
+                        <td class="align-middle" colspan="1">R$ 250,00</td>
+                        <td class="align-middle" colspan="1">R$ 2.000,00</td>
+                        <td class="align-middle" colspan="1">R$ 1.750,00</td>
+                      </tr>
+                      <tr>
+                        <td class="first-colum-table" colspan="3">
+                          <i class="fa-solid fa-user bg-ligth-gray p-2 rounded-circle gray"></i>
+                          <span class="px-2">Eduardo dos Santos</span>
+                        </td>
+                        <td class="align-middle" colspan="1">22/07/22</td>
+                        <td class="align-middle" colspan="1">03/12</td>
+                        <td class="align-middle" colspan="1">R$ 250,00</td>
+                        <td class="align-middle" colspan="1">R$ 2.000,00</td>
+                        <td class="align-middle" colspan="1">R$ 1.750,00</td>
+                      </tr>
+                      <tr>
+                        <td class="first-colum-table" colspan="3">
+                          <i class="fa-solid fa-user bg-ligth-gray p-2 rounded-circle gray"></i>
+                          <span class="px-2">Eduardo dos Santos</span>
+                        </td>
+                        <td class="align-middle" colspan="1">22/07/22</td>
+                        <td class="align-middle" colspan="1">03/12</td>
+                        <td class="align-middle" colspan="1">R$ 250,00</td>
+                        <td class="align-middle" colspan="1">R$ 2.000,00</td>
+                        <td class="align-middle" colspan="1">R$ 1.750,00</td>
+                      </tr>
+                      <tr>
+                        <td class="first-colum-table" colspan="3">
+                          <i class="fa-solid fa-user bg-ligth-gray p-2 rounded-circle gray"></i>
+                          <span class="px-2">Eduardo dos Santos</span>
+                        </td>
+                        <td class="align-middle" colspan="1">22/07/22</td>
+                        <td class="align-middle" colspan="1">03/12</td>
+                        <td class="align-middle" colspan="1">R$ 250,00</td>
+                        <td class="align-middle" colspan="1">R$ 2.000,00</td>
+                        <td class="align-middle" colspan="1">R$ 1.750,00</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end mb-3">
+                <button class="btn btn-success btn-green white">Adicionar Cobrança</button>
+              </div>
+              <div class="card bg-card py-5 px-4 mb-3">
+                <h2>Cobrança</h2>
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-6 col-xl-6 mt-2">
+                    <label class="gray pb-2 fw-semibold">Descrição</label>
+                    <div class="input-group flex-nowrap mb-4">
+                      <span class="input-group-text rounded-0 " id="addon-wrapping"><i
+                          class="fa-solid fa-file-pen gray"></i></span>
+                      <input type="text" class="form-control form-control-custom rounded-0 p-2" placeholder="Descreva"
+                        aria-label="Descreva" aria-describedby="addon-wrapping">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6 col-xl-6 mt-2">
+                    <label class="gray pb-2 fw-semibold">Valor</label>
+                    <div class="input-group flex-nowrap mb-4">
+                      <span class="input-group-text rounded-0 " id="addon-wrapping"><i
+                          class="fa-solid fa-dollar-sign gray"></i></span>
+                      <input type="text" class="form-control form-control-custom rounded-0 p-2"
+                        placeholder="Digite o valor da cobrança" aria-label="Digite o valor da cobrança"
+                        aria-describedby="addon-wrapping">
+                    </div>
+                  </div>
+
+                  <ul class="nav nav-tabs px-2" id="myTab" role="tablist">
+                    <li class="nav-item nav-link-custom" role="presentation">
+                      <button class="nav-custom nav-link active" id="home-tab" data-bs-toggle="tab"
+                        data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                        aria-selected="true">Único</button>
+                    </li>
+                    <li class="nav-item nav-link-custom" role="presentation">
+                      <button class="nav-custom nav-link" id="profile-tab" data-bs-toggle="tab"
+                        data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                        aria-selected="false">Parcelado</button>
+                    </li>
+                    <li class="nav-item nav-link-custom" role="presentation">
+                      <button class="nav-custom nav-link" id="contact-tab" data-bs-toggle="tab"
+                        data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+                        aria-selected="false">Recorrente</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content card rounded-0 mt-2 mx-2" id="myTabContent">
+                    <!-- SE ÚNICO -->
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                      tabindex="0">
+                      <label class="gray pb-2 fw-semibold">Data do vencimento</label>
+                      <div class="input-group flex-nowrap mb-4 w-50">
+                        <span class="input-group-text  rounded-0" id="addon-wrapping"><i
+                            class="fa-solid fa-calendar gray"></i></span>
+                        <input type="date" class="form-control form-control-custom pb-2 p-2 w-50 rounded-0"
+                          placeholder="Escolha data de vencimento" aria-label="Escolha data de vencimento"
+                          aria-describedby="addon-wrapping">
+                      </div>
+                    </div>
+                    <!-- SE PARCELADO -->
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                      tabindex="0">
+                      <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                          <label class="gray pb-2 fw-semibold">Data do vencimento</label>
+                          <div class="input-group flex-nowrap mb-4 ">
+                            <span class="input-group-text  rounded-0" id="addon-wrapping"><i
+                                class="fa-solid fa-calendar gray"></i></span>
+                            <input type="date" class="form-control form-control-custom pb-2 p-2 rounded-0"
+                              placeholder="Escolha data de vencimento" aria-label="Escolha data de vencimento"
+                              aria-describedby="addon-wrapping">
+                          </div>
+
+                          <label class="gray pb-2 fw-semibold">Intervalo entre as parcelas</label>
+                          <div class="input-group mb-4">
+                            <label class="input-group-text rounded-0" for="inputGroupSelect01"><i
+                                class="fa-solid fa-calendar gray"></i></label>
+                            <select class="form-select form-control-custom p-2 pb-2 rounded-0" id="inputGroupSelect01">
+                              <option selected>Diária</option>
+                              <option value="Semanal">Semanal</option>
+                              <option value="Quinzenal">Quinzenal</option>
+                              <option value="Mensal">Mensal</option>
+                              <option value="Bimestral">Bimestral</option>
+                              <option value="Trimestral">Trimestral</option>
+                              <option value="Semestral">Semestral</option>
+                              <option value="Anual">Anual</option>
+                            </select>
+                          </div>
+
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                          <label class="gray pb-2 fw-semibold">Numero de parcelas</label>
+                          <div class="input-group flex-nowrap mb-4">
+                            <span class="input-group-text rounded-0 " id="addon-wrapping"><i
+                                class="fa-solid fa-arrow-up-9-1 gray"></i></span>
+                            <input type="text" class="form-control form-control-custom rounded-0 p-2"
+                              placeholder="Digite o número de parcelas" aria-label="Digite o número de parcelas"
+                              aria-describedby="addon-wrapping">
+                          </div>
+
+                          <label class="gray pb-2 fw-semibold">Valor da parcela</label>
+                          <div class="input-group flex-nowrap mb-4">
+                            <span class="input-group-text rounded-0 " id="addon-wrapping"><i
+                                class="fa-solid fa-dollar-sign gray"></i></span>
+                            <input type="text" class="form-control form-control-custom rounded-0 p-2"
+                              placeholder="Digite o valor das parcelas" aria-label="Digite o valor das parcelas"
+                              aria-describedby="addon-wrapping">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- SE RECORRENTE -->
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                      tabindex="0">
+                      <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                          <label class="gray pb-2 fw-semibold">Intervalo de cobrança</label>
+                          <div class="input-group mb-4">
+                            <label class="input-group-text rounded-0" for="inputGroupSelect01"><i
+                                class="fa-solid fa-calendar gray"></i></label>
+                            <select class="form-select form-control-custom p-2 pb-2 rounded-0" id="inputGroupSelect01">
+                              <option selected>Diária</option>
+                              <option value="Semanal">Semanal</option>
+                              <option value="Quinzenal">Quinzenal</option>
+                              <option value="Mensal">Mensal</option>
+                              <option value="Bimestral">Bimestral</option>
+                              <option value="Trimestral">Trimestral</option>
+                              <option value="Semestral">Semestral</option>
+                              <option value="Anual">Anual</option>
+                            </select>
+                          </div>
+
+                          <label class="gray pb-2 fw-semibold">Data do primeira cobrança </label>
+                          <div class="input-group flex-nowrap mb-4 ">
+                            <span class="input-group-text  rounded-0" id="addon-wrapping"><i
+                                class="fa-solid fa-calendar gray"></i></span>
+                            <input type="date" class="form-control form-control-custom pb-2 p-2 rounded-0"
+                              placeholder="Escolha a data da primeira cobrança"
+                              aria-label="Escolha a data da primeira cobrança" aria-describedby="addon-wrapping">
+                          </div>
+
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                          <label class="gray pb-2 fw-semibold"> Escolha melhor dia do vencimento </label>
+                          <div class="input-group flex-nowrap mb-4 ">
+                            <span class="input-group-text  rounded-0" id="addon-wrapping"><i
+                                class="fa-solid fa-calendar gray"></i></span>
+                            <input type="date" class="form-control form-control-custom pb-2 p-2 rounded-0"
+                              placeholder=" Escolha melhor dia do vencimento"
+                              aria-label=" Escolha melhor dia do vencimento" aria-describedby="addon-wrapping">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end">
+                <input type="submit" value="Criar cobrança" class="btn btn-success  btn-green white">
+              </div>
+            </form>
+            <!-- END CARDS -->
+
+
+          </div>
+        </div>
+    </section>
+  </main>
+
+  <script src="./assets/js/all.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
